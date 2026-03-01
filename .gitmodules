@@ -1,0 +1,3 @@
+[submodule "libs/hypeGRL"]
+	path = libs/hypeGRL
+	url = https://github.com/CicadaUY/hypeGRL.git
