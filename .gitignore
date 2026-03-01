@@ -1,4 +1,25 @@
 .ipynb_checkpoints
 .DS_Store
 __pycache__/
-data/
+*.pyc
+*.pyo
+
+# Datasets — downloaded at runtime, not versioned
+data/*
+!data/.gitkeep
+
+# Experiment outputs — not versioned (only configs are tracked)
+experiments/results/*
+!experiments/results/.gitkeep
+
+# Saved model checkpoints
+*.pt
+*.ckpt
+
+# hypeGRL sub-dependency build artifacts
+libs/hypeGRL/venv/
+libs/hypeGRL/local_storage/
+libs/hypeGRL/d-mercator/
+libs/hypeGRL/hypermap/
+libs/hypeGRL/lorentz-embeddings/
+libs/hypeGRL/PoincareMaps/
